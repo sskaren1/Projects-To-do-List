@@ -52,7 +52,6 @@ const TodoInput = () => {
           okText="Add"
           onCancel={handleCancel}
         >
-          <p>New Project</p>
           <Form
             {...layout}
             name="projects"
@@ -84,10 +83,6 @@ const TodoInput = () => {
                 format={dateFormat}
               />
             </Form.Item>
-
-            {/* <Form.Item name={["user", "linkHelp"]} label="Enlaces de ayuda">
-              <Input />
-            </Form.Item> */}
           </Form>
         </Modal>
       </div>

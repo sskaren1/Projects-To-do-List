@@ -1,22 +1,22 @@
 @import "./../base/variables.scss";
 
 .ant-timeline.ant-timeline-label,.ant-timeline-item-label{
-  color: black;
+  color: $color-2;
 }
 .ant-timeline-item-tail{
-  border-left: 2px solid #323232!important;
+  border-left: 3px solid $neutral-3!important;
 }
 .ant-timeline-item-head{
   border: 3px solid transparent!important;
   width: 12px!important;
   height: 12px!important;
-  margin-left: -5.5px!important;
+  margin-left: -4px!important;
 }  
 .ant-timeline-item-head-red{
-  background-color: #ff4d4f!important;
+  background-color: $color-4!important;
 }
 .ant-timeline-item-head-green {
-  background-color: #52c41a!important;
+  background-color: $color-3!important;
 }
 .ant-timeline-item-head-blue{
   background-color: #1890ff!important;
@@ -27,6 +27,7 @@
 .ant-timeline-item-head.ant-timeline-item-head-#cbea17 {
   background-color: #cbea17!important;
 } 
+
 .cardProjectsList__container {
   display: flex;
   flex-wrap: wrap;
@@ -56,15 +57,57 @@
   h3{
     font-weight: 700;
     margin-bottom: 0;
+    color: $neutral-2;
   }
 }
 
 .card__content{
+  p{
+    color: $neutral-2;
+  }
   .startDate, .dueDate{
     display: flex;
     column-gap: 1rem;
     .heading{
       font-weight: 700;
+    }
+  }
+  .card__buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  button{
+    svg{
+      width: 1.8rem;
+    }
+  }
+  .btn--edit{
+    background-color: $color-3;
+    border-color: $color-3;
+    border-radius: 0.5rem;
+    &:hover, &:active, &:visited, &:focus{
+      background-color: $color-3;
+      border-color: $color-3;
+    }
+  }
+  .btn--add{
+    background-color: $color-5;
+    border-color: $color-5;
+    border-radius: 0.5rem;
+    &:hover, &:active, &:visited, &:focus{
+      background-color: $color-5;
+      border-color: $color-5;
+    }
+    
+  }
+  .btn--delete{
+    background-color: $color-4;
+    border-color: $color-4;
+    border-radius: 0.5rem;
+    &:hover, &:active, &:visited, &:focus{
+      background-color: $color-4;
+      border-color: $color-4;
     }
   }
 }
