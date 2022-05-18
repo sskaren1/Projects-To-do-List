@@ -1,0 +1,44 @@
+@import './../base/variables.scss';
+@import './../base/mixins.scss';
+
+.footer{
+    background-color: $neutral-1;
+    width: 100%;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding_elemt 0 0;
+    text-align: center;
+    p{
+        color: $neutral-2;
+    }
+
+    @include tablet{
+        @include grid-col-row(2,2,$gap-1);
+    }
+}
+
+.footer__site{
+    @include tablet{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+}
+.follow--footer{
+    display: flex;
+    column-gap: 2rem;
+    @include tablet{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+}
+
+.footer__copyright{
+    @include tablet{
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+}

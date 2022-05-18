@@ -1,0 +1,12 @@
+@import './../base/variables.scss';
+
+.inputs__container{
+    margin-bottom: 2rem!important;
+
+    .btn--modal{
+        span{
+            font-weight: 700;
+            color: $neutral-2;
+        }
+    }
+}
